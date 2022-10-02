@@ -1,4 +1,18 @@
 html, body{
     margin: 0;
     padding: 0;
+	
 }
+
+  p{font-size:14px;}
+
+img{
+      width: 100%;
+   }
+
+
+
+@media screen and (min-width: 700px) {
+    body {font-size: 12px;}  /* Font size for all content on the page to be 12px*/
+    }
+
