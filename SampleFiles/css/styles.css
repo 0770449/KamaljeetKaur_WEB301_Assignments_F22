@@ -3,7 +3,9 @@ html, body{
     padding: 0;
 	
 }
-
+a {
+    display:none;
+  }
   p{font-size:14px;}
 
 img{
@@ -11,9 +13,9 @@ img{
    }
 
 
-
 @media screen and (min-width: 700px) {
     body {font-size: 12px;}  /* Font size for all content on the page to be 12px*/
+
     p{
         max-width: 650px;
 		text-align: center;
@@ -25,6 +27,7 @@ img{
         display:inline;
      }
 }
+
 @media screen and (min-width: 1024px) {
     p{max-width: 1000px;}
 }
