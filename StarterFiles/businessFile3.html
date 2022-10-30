@@ -13,22 +13,61 @@
 
 <body>
   <header>
+     <!-- Added Hamburger -->
+    <button id="mobile-hamburger">
+      <span class="material-icons">
+          <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M22 13C22 14.11 21.11 15 20 15H4C2.9 15 2 14.11 2 13S2.9 11 4 11H13L15.5 13L18 11H20C21.11 11 22 11.9 22 13M12 3C3 3 3 9 3 9H21C21 9 21 3 12 3M3 18C3 19.66 4.34 21 6 21H18C19.66 21 21 19.66 21 18V17H3V18Z" />
+          </svg>
+  </button>
     <!-- Nav goes here -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="businessFile1.html">Whiskeyjack Boutique</a></li>
+      <li><a href="businessFile2.html">ShopEco</a></li>
+      <li><a href="businessFile3.html">Auto Hut</a></li>
+    </ul>
+  </nav>  
   </header>
   <main>
     <!-- Content goes here -->
-  </main>
-  <footer>
-    <!-- Github link goes here -->
-    <footer>
-      <div class="container">
-        <p><a href="https://github.com/0770449/KamaljeetKaur_WEB301_Assignments_F22/tree/Assignment02">Assignment02 Github Link</a></p>
+    <div class="wrapper">
+      <div class="col-4">
+          <section>
+            <h2>Auto Hut</h2>
+            <img src="img/autohut.jpg" height="83px">
+            <p><a href="index.html">HomePage </a></p>
+            <p> The Auto Hut website is displaying the content and images in both designs, adaptive as well as responsive.</p>
+          </section>
       </div>
-  </footer>
+      <div class="col-4">
+        <section>
+           <p>The main attractive point of this website is that in the iPhone 12 pro(390*844) layout, the navigational bar 
+              changed to the hamburger manu, from where we can select any link associated to the given site. </p>
+          </section>
+        </div>
+        <div class="col-4">
+          <section>
+            <p>The whole website is designed in perfect way. In other words, I can say that everything is visible at any resolution.</p>
+          </section>
+        </div>
+      </div>
+  </main>
+  
+    
+  <footer>
+    <div class="container">
+      <p><a href="https://github.com/0770449/KamaljeetKaur_WEB301_Assignments_F22/tree/Assignment02">Assignment02 Github Link</a></p>
+    </div>
+</footer>
 
-   <!-- Added  reference of jQuery-->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+ <!-- Added  reference of jQuery-->
+  <!-- Scripts generally should be added after all the content, for speed purposes -->
+ <script src="https://code.jquery.com/jquery-3.6.1.js"
+ integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+ crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
