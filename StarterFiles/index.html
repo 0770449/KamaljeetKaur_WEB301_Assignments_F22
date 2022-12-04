@@ -41,7 +41,11 @@
     </nav>
     
   </header>
+  
   <main>
+
+     <!-- Working with accordion-flush -->
+    <div class="row">
     <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingOne">
@@ -72,21 +76,128 @@
     </h2>
     <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
       <div class="accordion-body"><img src="img/autohut.jpg"></div>
-      </div>
+    </div>
   </div>
 </div>
+</div>
 
-  </main>
-  <footer>
-    <div>
-      By: <a href="https://github.com/0770449/KamaljeetKaur_WEB301_Assignments_F22/tree/Assignment3" target="_blank">Kamaljeet Kaur</a>
-  </div>
-  </footer>
-  <!-- Scripts generally should be added after all the content, for speed purposes -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
+<div class="p-3 m-0 border-0 bd-example">
+
+  <!-- Example Code -->
   
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Whiskeyjack Boutique</button>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModa2" data-bs-whatever="@fat">ShopEco</button>
+  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModa3" data-bs-whatever="@getbootstrap">Auto Hut</button>
+  
+  <div class="modal fade" id="exampleModal" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="spinner-grow" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Whiskeyjack Boutique</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          
+        </div>
+        <div class="modal-body">
+         
+        <img src="img/WhiskeyjackBoutique.jpeg"/>
+         
+        <p>After considering the <a href="https://whiskeyjackboutique.com" >"Whiskeyjack Boutique"</a> website I come to know 
+          that this website is not responsive but at the resolution of 250*343 it becomes responsive. Although there 
+          are still some of the images are not able to see properly.</p><br>
+        
+       
+        <p>This website also use some column layout in the mobile view. For example, for the gift card it display prizes 
+        in column view. All the images are adjusted very well.</p>
+
+        <p>But in the iPhone 12 pro(390*844), the space for content is not 
+        sufficient, which I donot like in this website</p>
+        
+        <p>If I want to make some improvements in this website, then firstly I added little bit colors to this site and 
+        also added sufficient space to the content as well as to the images too.</p>
+        </div>
+       
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="modal fade" id="exampleModa2" tabindex="0" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Shop Eco</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/shopeco.jpeg">
+              <p> One important thing which I noticed in this website is that the layout of the content as well as images
+               remained same in all devices for example in the iPhone 12 pro(390*844) and on  the desktop too.</p>
+       
+       <p>Not only this, this website also use column layout to display the new arrivals of different types of 
+              products</p>
+      
+      <p>All in all, I can say that this site is perfect as my point of view despite to  the "The Hive Blog".</p>
+       
+        </div>
+       
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+ </div>
+ 
+ <div class="modal fade" id="exampleModa3" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Auto Hut</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/autohut.jpg">
+          <section>
+         <p>The main attractive point of this website is that in the iPhone 12 pro(390*844) layout, the navigational bar 
+            changed to the hamburger manu, from where we can select any link associated to the given site. </p>
+        </section>
+    
+     
+        <section>
+          <p>The whole website is designed in perfect way. In other words, I can say that everything is visible at any resolution.</p>
+        </section>
+       
+        </div>
+       
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+ </div>
+
+</main>
+<footer>
+  <div>
+    By: <a href="https://github.com/0770449/KamaljeetKaur_WEB301_Assignments_F22/tree/Assignment3" target="_blank">Kamaljeet Kaur</a>
+</div>
+</footer>
+<!-- Scripts generally should be added after all the content, for speed purposes -->
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 
 </html>
