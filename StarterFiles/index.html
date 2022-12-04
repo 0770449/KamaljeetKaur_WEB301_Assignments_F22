@@ -8,18 +8,76 @@
   <meta name="author" content="Kamaljeet Kaur" />
   <title>Web301 -Assignment3</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
   <header>
     <!-- Nav goes here -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Kamaljeet Kaur</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://whiskeyjackboutique.com/">Whiskeyjack Boutique</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://shopeco.ca/">ShopEco</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://autohutclinic.com/">Auto Hut</a>
+            </li>
+           </ul> 
+        </div>
+      </div>
+    </nav>
+    
   </header>
   <main>
-    <!-- Content goes here -->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        <strong>Whiskeyjack Boutique
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><img src="img/WhiskeyjackBoutique.jpeg"></div>
+     
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+       <strong> ShopEco</strong>
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><img src="img/shopeco.jpeg"></div> 
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+      <strong>  Auto Hut</strong>
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><img src="img/autohut.jpg"></div>
+      </div>
+  </div>
+</div>
+
   </main>
   <footer>
-    <!-- Github link goes here -->
     <div>
       By: <a href="https://github.com/0770449/KamaljeetKaur_WEB301_Assignments_F22/tree/Assignment3" target="_blank">Kamaljeet Kaur</a>
   </div>
