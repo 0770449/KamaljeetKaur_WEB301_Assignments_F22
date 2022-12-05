@@ -2,3 +2,9 @@ html, body{
     margin: 0;
     padding: 0;
 }
+
+.navbar{text-decoration: solid;
+      text-align: center;
+     }
+.accordion {border:2px solid black;
+    border-radius: 15px;}
