@@ -8,3 +8,5 @@ html, body{
      }
 .accordion {border:2px solid black;
     border-radius: 15px;}
+
+    .row{ margin-top: 15px;}

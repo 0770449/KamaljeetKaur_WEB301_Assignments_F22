@@ -1,0 +1,101 @@
+/**************
+ Note that in the current state, both grid system definitions overwrite each other. 
+ If you want to use both together in the same project, you need to give them unique class names rather than just .col-* for both
+ *************/
+
+/*
+  Grid System Definition - WITH margins
+*/
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid rgb(5, 2, 2);
+    text-align: center;
+    box-sizing: border-box;
+   
+    width: 100%;
+  }
+  [class*="col-"]:first-child {
+    margin-left: 0;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin: 0 0 10px 0;
+  }
+  
+  @media screen and (min-width: 400px) {
+    .col-1 {
+      /* Originally we started with this */
+      /* width: calc(100% / 12); */
+      /* now we need to account for a 1% margin, 11 times (so we subtract it from 100) */
+      width: calc((100% - 11%) / 12);
+      /* width: calc(89% / 12); */
+    }
+    .col-2 {
+      /* Originally we started with this */
+      /* width: calc(2 * (100% / 12)); */
+      /* now we need to account for a 1% margin, 11 times (so we subtract it from 100) */
+      /* We add 1% afterwards because we lost 1 margin between two columns, so that 1% margin goes into this elements width */
+      width: calc(2 * ((100% - 11%) / 12) + (1 * 1%));
+      /* width: calc(2 * (89% / 12) + 1%); */
+    }
+    .col-3 {
+      /* Originally we started with this */
+      /* width: calc(3 * (100% / 12)); */
+      /* now we need to account for a 1% margin, 11 times (so we subtract it from 100) */
+      /* We add 1% afterwards 2 times because we lost 2 margins between the 3 columns, so that 2% margin goes into this elements width */
+      width: calc(3 * ((100% - 11%) / 12) + (2 * 1%));
+      /* width: calc(3 * (89% / 12) + 2%); */
+    }
+    .col-4 {
+      width: calc(4 * ((100% - 11%) / 12) + (3 * 1%));
+      /* width: calc(4 * (89% / 12) + 3%); */
+    }
+    .col-5 {
+      width: calc(5 * ((100% - 11%) / 12) + (4 * 1%));
+      /* width: calc(5 * (89% / 12) + 4%); */
+    }
+    .col-6 {
+      width: calc(6 * ((100% - 11%) / 12) + (5 * 1%));
+    }
+    .col-7 {
+      width: calc(7 * ((100% - 11%) / 12) + (6 * 1%));
+    }
+    .col-8 {
+      width: calc(8 * ((100% - 11%) / 12) + (7 * 1%));
+    }
+    .col-9 {
+      width: calc(9 * ((100% - 11%) / 12) + (8 * 1%));
+    }
+    .col-10 {
+      width: calc(10 * ((100% - 11%) / 12) + (9 * 1%));
+    }
+    .col-11 {
+      width: calc(11 * ((100% - 11%) / 12) + (10 * 1%));
+      /* width: calc(11 * (89% / 12) + 10%); */
+    }
+    .col-12 {
+      width: 100%;
+      
+      display: block;
+      flex-wrap: wrap;
+      flex-direction: column;
+      
+    }
+    img {
+      width: 350px;
+      height: 200px;
+  }
+  }
+    @media screen and (min-width: 400px) {
+      .logo{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: grey;
+      
+      }
+  }
