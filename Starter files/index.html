@@ -80,21 +80,69 @@
       </div>
       <div class="form-check form-switch">
         <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled">
-        <label class="form-check-label" for="flexSwitchCheckDisabled">Non-Profit</label>
-      </div>
-     
-      </div>
-      <div class="col-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-          <label class="form-check-label" for="invalidCheck">
-            Agree to terms and conditions
-          </label>
-          <div class="invalid-feedback">
-            You must agree before submitting.
-          </div>
+        <label class="form-check-label" for="flexSwitchCheckDisabled">For-Profit</label>
+        <div class="valid-feedback">
+          Please Select Appropriate business
         </div>
       </div>
+      <div class="col-md-12">
+        <label for="province and territories" class="form-label">Province business operates</label>
+        <select class="form-select" aria-label="Province" id="province and territories" required>
+          <option selected>Choose the Provience</option>
+          <option value="Alberta">Alberta</option>
+          <option value="British Columbia">British Columbia</option>
+          <option value="Manitoba">Manitoba</option>
+          <option value="New Brunswick">New Brunswick</option>
+          <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+          <option value="Northwest Territories">Northwest Territories</option>
+          <option value="Nova Scotia">Nova Scotia</option>
+          <option value="Nunavut">Nunavut</option>
+          <option value="Ontario">Ontario</option>
+          <option value="Prince Edward Island">Prince Edward Island</option>
+          <option value="Quebec">Quebec</option>
+          <option value="Saskatchewan">Saskatchewan</option>
+          <option value="Yukon">Yukon</option>
+          </select>
+          <div class="valid-feedback">
+          Please enter your Provience and Territories
+        </div>
+      </div>
+      
+      <div class="col-md-12">
+        <label for="Service industries" class="form-label" disabled>List of Service industries</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="Knowledge industry">
+          <label class="form-check-label novalidate" for="Knowledge industry">
+           Knowledge industry
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="Public services">
+          <label class="form-check-label novalidate" for="Public services">
+            Public services
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id=" Wedding industry">
+          <label class="form-check-label novalidate" for=" Wedding industry">
+            Wedding industry
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="Transport">
+          <label class="form-check-label novalidate" for="Transport">
+           Transport
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id=" Trade>
+          <label class="form-check-label novalidate" for=" Trade">
+            Trade
+          </label>
+        </div>
+      </div>
+      
+      
       <div class="col-12">
         <button class="btn btn-primary" type="submit">Submit form</button>
       </div>
