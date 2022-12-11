@@ -1,5 +1,5 @@
 // Example starter JavaScript for disabling form submissions if there are invalid fields
-(() => {
+$(document).ready( function() {
   'use strict'
 
   // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -18,11 +18,22 @@
         
 
         // then open it by using the show() method
+       
+        $(".modal").toggle();
+        $(".modal-footer").on('click', function ()
+        {
+          $(".modal").hide();
+        });
+        
 
       }
-
-      
+      else {
+		  //Display alert
+        
+      $('.alert').show();       
+        
+      }
       form.classList.add('was-validated')
     }, false)
   })
-})()
+}) 
